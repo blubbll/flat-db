@@ -26,6 +26,12 @@
   "dependencies": {
     "bellajs": "6.x.x",
     "debug": "2.x.x",
+    "kcors": "2.x.x",
+    "koa": "2.x.x",
+    "koa-bodyparser": "4.x.x",
+    "koa-favicon": "2.x.x",
+    "koa-response-time": "2.x.x",
+    "koa-router": "7.x.x",
     "mkdirp": "0.x.x"
   },
   "devDependencies": {

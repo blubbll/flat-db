@@ -1,7 +1,4 @@
-/**
- * Testing
- * @ndaidong
- */
+// tests / main
 
 var test = require('tape');
 

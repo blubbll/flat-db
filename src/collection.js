@@ -28,7 +28,6 @@ var config = require('./configs');
 
 var Finder = require('./finder');
 
-
 var C = new Map();
 
 class Collection {
@@ -226,6 +225,16 @@ class Collection {
   find() {
     return new Finder(this.all());
   }
+
+  // query(c) {
+  //   let chain = chainify(c, this.schema);
+
+  //   let entries = [];
+  //   if (chain && chain.length) {
+  //     return chain;
+  //   }
+  //   return entries;
+  // }
 
   reset() {
     this.lastModified = time();

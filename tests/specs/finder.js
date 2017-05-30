@@ -1,7 +1,4 @@
-/**
- * Testing
- * @ndaidong
- */
+// tests / finder
 
 var path = require('path');
 var test = require('tape');

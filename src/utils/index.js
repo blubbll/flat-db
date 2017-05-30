@@ -14,6 +14,7 @@ var delFile = require('./delFile');
 var exists = require('./exists');
 
 var normalize = require('./normalize');
+var chainify = require('./chainify');
 
 module.exports = {
   fixPath,
@@ -23,5 +24,6 @@ module.exports = {
   exists,
   mkdir,
   rmdir,
-  normalize
+  normalize,
+  chainify
 };

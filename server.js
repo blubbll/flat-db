@@ -19,6 +19,11 @@ var {
   url
 } = config;
 
+config.dir = 'storage/db';
+
+var FlatDB = require('./index');
+config = FlatDB.configure(config);
+
 var app = new Koa();
 
 app.context.config = config;
@@ -64,8 +69,9 @@ app.use((err, ctx) => {
 });
 
 var onServerReady = () => {
-  info('Access APIs via', `${host}:${port}`);
-  info(`Public URL: ${url || 'None'}`);
+  console.log(`FlatDB@${FlatDB.version} started...`);
+  console.log('Access APIs via', `${host}:${port}`);
+  console.log(`Public URL: ${url || 'None'}`);
 };
 
 app.listen(port, onServerReady);

@@ -1,7 +1,4 @@
-/**
- * Testing
- * @ndaidong
- */
+// tests / collection
 
 var test = require('tape');
 
@@ -134,7 +131,7 @@ test('Test FlatDB.Collection class:', (assert) => {
 test('Test FlatDB.Collection class with persistent data:', (assert) => {
 
   FlatDB.configure({
-    dir: './/test///db'
+    dir: './/tests///db'
   });
 
   let Movie = new FlatDB.Collection('movies', {
